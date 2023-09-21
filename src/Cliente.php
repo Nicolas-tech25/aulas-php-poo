@@ -6,4 +6,9 @@ class cliente {
     public string $senha;
     public array $telefones;
 
+    /* Métodos (ou comportamentos) */
+    public function exibirDados() :void {
+        
+    }
+
 }

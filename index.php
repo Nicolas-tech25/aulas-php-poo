@@ -12,6 +12,8 @@
     <h2>Assuntos Abordados: </h2>
     <ul>
         <li>Criação de clase</li>
+        <li>Importação do arquivo de classe</li>
+        <li>Criação de instancias/objtos</li>
     </ul>
 
     <?php
