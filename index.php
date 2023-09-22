@@ -22,10 +22,14 @@
 
         //usando o setter para atribuir um valor á propriedade privada "nome"
         $clienteA->setNome("Fulano da silva");
+        $clienteA->setEmail("Fulano@gmail.com");
+        $clienteA->setsenha("123ful");
     ?>
 
     <!-- Acessando através do get -->
     <p>Nome: <?= $clienteA->getNome() ?></p>
+    <p>Email: <?= $clienteA->getemail() ?></p>
+    <p>Senha: <?= $clienteA->getsenha() ?></p>
     <pre><?= var_dump($clienteA) ?></pre>
 </body>
 </html>
