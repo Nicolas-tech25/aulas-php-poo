@@ -2,17 +2,16 @@
 class cliente {
     /* Propriedades/atributos */
     public string $nome;
-    public string $email= " ";
-    public string $senha;
-    public array $telefones;
+    private string $email= " ";
+    private string $senha;
 
-    
-    /* Método construtor permite configurar a forma de inicialização do objeto, exigindo a atribuição de dados no momento de criar o objeto/instancia. o construtor é sempre chamado de forma automatica */
-    public function _construct(string $nome,string $email,array $telefones){
+    /* metodo getters e setters */
+    public function setNome(string $nome):void{
         $this->nome = $nome;
-        $this->email = $email;
-        $this->telefones = $telefones;
     }
-   
+    public function getNome():string{
+       return $this->nome;
+    }
+
 
 }

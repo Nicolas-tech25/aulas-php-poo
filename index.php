@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 03</title>
+    <title>Exemplo 04</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 03</h1>
+    <h1>PHP com POO - Exemplo 04</h1>
     <hr>
 
     <h2>Assuntos Abordados: </h2>
     <ul>
-        <li>Método construtor com atribuição obrigatória de valores aos parâmetros/propriedades do objeto</li>
-        <li>Uso do <code>$this</code> para acesso de propriedades do objeto</li>
+        <li>Encapsulamento</li>
+        <li>Modificadores de visuabilidade</li>
     </ul>
 
     <?php 
         require_once "src/Cliente.php"; 
-        $clienteA = new Cliente("fulano", "fulano@gmail.com");
-        $clienteA = new Cliente("Neymar", "ney@msn.com");
+        $clienteA = new Cliente;
+        /* $clienteA->nome = "Tiago "; */
 
-        $clienteA->telefones = ["11-2345-0300"];
+        //usando o setter para atribuir um valor á propriedade privada "nome"
+        $clienteA->setNome("Fulano da silva");
     ?>
+
+    <!-- Acessando através do get -->
+    <p>Nome: <?= $clienteA->getNome() ?></p>
+    <pre><?= var_dump($clienteA) ?></pre>
 </body>
 </html>
