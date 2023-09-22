@@ -14,6 +14,7 @@
         <li>Acesso direto ás propriedades</li>
         <li>Atribuição e leitura de dados</li>
         <li>Chamada de método</li>
+        <li>uso do <code>$this</code> para acessar recursos dentro da própria classe</li>
     </ul>
 
     <?php
@@ -61,6 +62,12 @@
             <li><?= $telefones ?></li>
        <?php }?>
     </ul>
+
+    <h2>Acessando os dados através de um método</h2>
+    <?= $clienteA->exibirDados()?>
+    <?= $clienteB->exibirDados()?>
+
+    <h3><?= $clienteB->nome ?></h3>
 
     <pre><?=var_dump($clienteA,$clienteB)?></pre>
 </body>
