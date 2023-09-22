@@ -6,12 +6,13 @@ class cliente {
     public string $senha;
     public array $telefones;
 
-    /* Métodos (ou comportamentos) */
-    public function exibirDados() :void {
-        echo "<section>";
-        echo "<h2> $this->nome <h2>";
-        echo "<h2> $this->email <h2>";
-        echo "</section>";
+    
+    /* Método construtor permite configurar a forma de inicialização do objeto, exigindo a atribuição de dados no momento de criar o objeto/instancia. o construtor é sempre chamado de forma automatica */
+    public function _construct(string $nome,string $email,array $telefones){
+        $this->nome = $nome;
+        $this->email = $email;
+        $this->telefones = $telefones;
     }
+   
 
 }
