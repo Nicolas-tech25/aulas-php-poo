@@ -11,7 +11,8 @@
 
     <h2>Assuntos Abordados: </h2>
     <ul>
-        
+        <li>Método construtor com atribuição obrigatória de valores aos parâmetros/propriedades do objeto</li>
+        <li>Uso do <code>$this</code> para acesso de propriedades do objeto</li>
     </ul>
 
     <?php 
