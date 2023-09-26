@@ -15,6 +15,8 @@
     <ul>
         <li>Herança(Super classe e sub classe)</li>
         <li>Métodos/propriedades protegidos (acessíveis apenas pela classe em que foram definidos e pelas subclasses)</li>
+        <li>Classe abstrata</li>
+        <li>Classe final</li>
     </ul>
 
     <?php
@@ -56,5 +58,11 @@
 
     <pre><?=var_dump($clientePF)?></pre>
     <pre><?=var_dump($clientePJ)?></pre>
+
+    <?php
+        require_once "src/Cliente.php";
+        $clienteGenerico = new Cliente;
+    ?>
+    <pre><?=var_dump($clienteGenerico)?></pre>
 </body>
 </html>

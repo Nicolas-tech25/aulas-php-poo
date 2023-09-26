@@ -1,5 +1,7 @@
 <?php
-class cliente {
+    /* Classe abrtata
+    não pode ser iniciada, ou seja,  não é possivel criar um objeto a partit desta classe. Ela é usada apenas como modelo para subclasses com herança. */
+    abstract class cliente {
     /* Propriedades/atributos */
     public string $nome;
     private string $email= " ";
