@@ -3,33 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 04</title>
+    <title>Exemplo 05</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 04</h1>
+    <h1>PHP com POO - Exemplo 05</h1>
     <hr>
 
     <h2>Assuntos Abordados: </h2>
     <ul>
-        <li>Encapsulamento</li>
-        <li>Modificadores de visuabilidade</li>
+        <li>Herança(Super classe e sub classe)</li>
     </ul>
-
-    <?php 
-        require_once "src/Cliente.php"; 
-        $clienteA = new Cliente;
-        /* $clienteA->nome = "Tiago "; */
-
-        //usando o setter para atribuir um valor á propriedade privada "nome"
-        $clienteA->setNome("Fulano da silva");
-        $clienteA->setEmail("Fulano@gmail.com");
-        $clienteA->setsenha("123ful");
-    ?>
-
-    <!-- Acessando através do get -->
-    <p>Nome: <?= $clienteA->getNome() ?></p>
-    <p>Email: <?= $clienteA->getemail() ?></p>
-    <p>Senha: <?= $clienteA->getsenha() ?></p>
-    <pre><?= var_dump($clienteA) ?></pre>
 </body>
 </html>
