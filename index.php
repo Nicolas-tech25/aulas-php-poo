@@ -6,10 +6,12 @@
     <title>Exemplo 05</title>
 </head>
 <body>
+
     <h1>PHP com POO - Exemplo 05</h1>
     <hr>
 
     <h2>Assuntos Abordados: </h2>
+
     <ul>
         <li>Herança(Super classe e sub classe)</li>
     </ul>
@@ -18,7 +20,7 @@
         require_once "src/PessoaFisica.php";
         
         // Require pessoa juridica
-        require_once "src/pessoajuridica.php";
+        require_once "src/PessoaJuridica.php";
 
         $clientePF = new PessoaFisica;
         $clientePJ = new PessoaJuridica;
@@ -37,12 +39,19 @@
         $clientePJ->setnomeFantasia("Real Cruzeiro");
     ?>
 
-    <h2>ClientePJ</h2>
-    <h3>Nome: <?=$nome?></h3>
-    <h3>Email: <?=$email?></h3>
-    <h3>Ano: <?=$ano?></h3>
-    <h3>CNPJ: <?=$cnpj?></h3>
-    <h3>Nome Fantasia: <?=$nomeFantasia?></h3>
+    <hr>
+    <!-- Exibição de dados Cliente PJ -->
+
+    <article>
+        <h2>ClientePJ</h2>
+        <p>Nome: <?=$clientePJ->getNome()?></p>
+        <p>Email: <?=$clientePJ->getEmail()?></p>
+        <p>Ano: <?=$clientePJ->getAno()?></p>
+        <p>CNPJ: <?=$clientePJ->getCnpj()?></p>
+        <p>Nome Fantasia: <?=$clientePJ->getNomeFantasia()?></p>
+    </article>
+
+    <hr>
 
     <pre><?=var_dump($clientePF)?></pre>
     <pre><?=var_dump($clientePJ)?></pre>
