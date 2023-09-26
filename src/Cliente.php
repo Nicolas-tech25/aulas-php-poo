@@ -4,6 +4,7 @@ class cliente {
     public string $nome;
     private string $email= " ";
     private string $senha;
+    private string $situacao = "a definir";
 
     /* metodo getters e setters */
     public function setNome(string $nome):void{
@@ -26,5 +27,20 @@ class cliente {
 
     public function getSenha():string {
         return $this->senha;
+    }
+
+
+    /* Visibilidade protected
+    Estes getters e setters poderão ser usados APENAS aqui na (classe cliente) e nas subclasses (Pessoa fisica e juridica) */
+    protected function getSituacao(): string
+    {
+        return $this->situacao;
+    }
+
+    protected function setSituacao(string $situacao): self
+    {
+        $this->situacao = $situacao;
+
+        return $this;
     }
 }
