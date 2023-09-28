@@ -6,10 +6,10 @@ class PessoaJuridica extends Cliente{
     private string $nomeFantasia;
 
     public function exibirDados():void{
-        echo "<h3>Método exibirDados - Classe Pessoa Juridica </h3>";
-        echo "<h4>" .$this->getNome()."</h4>";
-        echo "<p>" .$this->nomeFantasia."</p>";
-        echo "<p>" .$this->getSituacao()."</p>";
+        /* parent::recursos
+        Permite acesso aos recursos da classe pai (superclasse) */
+        parent::exibirDados();
+        echo "<p>Nome Fantasia: $this->nomeFantasia</p>";
     }
 
     public function __construct(){

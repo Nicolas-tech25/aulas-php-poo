@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 05</title>
+    <title>Exemplo 07</title>
 </head>
 <body>
 
-    <h1>PHP com POO - Exemplo 05</h1>
+    <h1>PHP com POO - Exemplo 07</h1>
     <hr> 
 
     <h2>Assuntos Abordados: </h2>
 
     <ul>
-        <li>Herança(Super classe e sub classe)</li>
+        <li>Poliformismo</li>
+        <li>Sobreposição de métodos</li>
+        <li>uso do <code>parent</code> para acessar superclasse</li>
     </ul>
 
     <?php
@@ -39,23 +41,6 @@
         $clientePJ->setnomeFantasia("Real Cruzeiro");
     ?>
 
-    <hr>
-    <!-- Exibição de dados Cliente PJ -->
-
-    <pre><?=var_dump($clientePF)?></pre>
-    <pre><?=var_dump($clientePJ)?></pre>
-
-    <hr>
-
-    <article>
-        <h2>ClientePJ</h2>
-        <p>Nome: <?=$clientePJ->getNome()?></p>
-        <p>Email: <?=$clientePJ->getEmail()?></p>
-        <p>Ano: <?=$clientePJ->getAno()?></p>
-        <p>CNPJ: <?=$clientePJ->getCnpj()?></p>
-        <p>Nome Fantasia: <?=$clientePJ->getNomeFantasia()?></p>
-    </article>
-    
     <hr>
 
     <h2>Saída de dados</h2>

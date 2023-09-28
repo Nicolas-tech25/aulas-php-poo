@@ -10,8 +10,8 @@
 
     public function exibirDados():void{
         echo "<h3>Método exibirDados - Classe Cliente </h3>";
-        echo "<h4> $this->nome</h4>"; // ou
-        echo "<p> $this->situacao </p>";
+        echo "<h4>" .$this->getNome()."</h4>"; // ou
+        echo "<p>" .$this->getSituacao(). " </p>";
     }
 
     /* metodo getters e setters */
