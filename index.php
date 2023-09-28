@@ -13,7 +13,8 @@
     <h2>Assuntos Abordados: </h2>
 
     <ul>
-        <li>Herança(Super classe e sub classe)</li>
+        <li>Poliformismo</li>
+        <li>Sobreposição de métodos</li>
     </ul>
 
     <?php
