@@ -8,7 +8,7 @@
 <body>
 
     <h1>PHP com POO - Exemplo 05</h1>
-    <hr>
+    <hr> 
 
     <h2>Assuntos Abordados: </h2>
 
