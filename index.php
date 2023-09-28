@@ -65,7 +65,7 @@
     </section>
 
     <section>
-        <?=$clientePj->exibirDados()?>
+        <?=$clientePJ->exibirDados()?>
     </section>
     
 </body>
