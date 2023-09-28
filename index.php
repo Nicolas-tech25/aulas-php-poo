@@ -3,55 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 07</title>
+    <title>Exemplo 08</title>
 </head>
 <body>
 
-    <h1>PHP com POO - Exemplo 07</h1>
+    <h1>PHP com POO - Exemplo 08</h1>
     <hr> 
 
     <h2>Assuntos Abordados: </h2>
 
     <ul>
-        <li>Poliformismo</li>
-        <li>Sobreposição de métodos</li>
+        <li>Propriedades e métodos estáticos</li>
+        <li>Acesso direto sem objetos/instâncias</li>
         <li>uso do <code>parent</code> para acessar superclasse</li>
     </ul>
 
-    <?php
-        require_once "src/PessoaFisica.php";
-        
-        // Require pessoa juridica
-        require_once "src/PessoaJuridica.php";
-
-        $clientePF = new PessoaFisica;
-        $clientePJ = new PessoaJuridica;
-
-        // Colocar um nome
-        $clientePF->setNome("Craque neto");
-        $clientePF->setEmail("Jogouaonde.10@gmail.com");
-        $clientePF->setIdade(57);
-        $clientePF->setCpf("452.618.338-50");
-
-        //Dados Pessoa Juridica
-        $clientePJ->setNome("Ronaldo");
-        $clientePJ->setEmail("Ronaldo.10@gmail.com");
-        $clientePJ->setAno(2009);
-        $clientePJ->setCnpj("32.088.0001/000.51");
-        $clientePJ->setnomeFantasia("Real Cruzeiro");
-    ?>
-
     <hr>
 
-    <h2>Saída de dados</h2>
-
-    <section>
-        <?=$clientePF->exibirDados()?>
-    </section>
-
-    <section>
-        <?=$clientePJ->exibirDados()?>
-    </section>
     
 </body>
 </html>
