@@ -1,6 +1,5 @@
 <?php
-    /* Classe abrtata
-    não pode ser iniciada, ou seja,  não é possivel criar um objeto a partit desta classe. Ela é usada apenas como modelo para subclasses com herança. */
+    namespace Tabajara;
     abstract class cliente {
     /* Propriedades/atributos */
     public string $nome;

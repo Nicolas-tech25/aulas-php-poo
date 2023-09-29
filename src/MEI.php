@@ -1,4 +1,5 @@
 <?php
+namespace Tabajara;
 require_once "src/PessoaJuridica.php";
 
 /* Classe Final Não permite  estender recursos para novas subclasses, ou seja, não permite herança */

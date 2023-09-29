@@ -47,5 +47,15 @@
 
     <pre><?=var_dump($pagamentoFornecedor)?></pre>
     <pre><?=var_dump($pagamentoPrestador)?></pre>
+
+    <hr>
+
+    <!-- Exercicios: -->
+    <?php
+        $ClienteTb = new Cliente;
+        $ClientePf = new PessoaFisica;
+        $ClientePj = new PessoaJuridica;
+        $ClienteMei = new MEI;
+    ?> 
 </body>
 </html>
