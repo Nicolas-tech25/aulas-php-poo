@@ -21,9 +21,16 @@
     <hr>
 
     <?php
-        /* Só de fazer o require/importação das classes, já da erro no servidor devido a terem o mesmo nome. */
+        /* Só de fazer o require/importação das classes (SEM NAMESPACES6.), já da erro no servidor devido a terem o mesmo nome. */
         require_once "src/fornecedores/Pagamento.php";
         require_once "src/prestadores/Pagamento.php";
+
+        // Forma 1 de usar namespaces
+        $pagamentoFornecedor = new Fornecedor\Pagamento;
+        $pagamentoPagamento = new Prestador\Pagamento;
     ?>
+
+    <pre><?=var_dump($pagamentoFornecedor)?></pre>
+    <pre><?=var_dump($pagamentoPagamento)?></pre>
 </body>
 </html>
