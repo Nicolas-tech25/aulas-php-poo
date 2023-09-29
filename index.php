@@ -47,5 +47,11 @@
     <p>Nome Fantasia: <?=$ClientePj->getNomeFantasia()?></p>
     <p>Área de atuação: <?=$ClienteMei->getAreaDeAtuacao()?></p>
 
+    <hr>
+    <?php
+        $escola = new Tabajara\Escola;
+    ?>
+    <pre><?=var_dump($escola)?></pre>
+
 </body>
 </html>
