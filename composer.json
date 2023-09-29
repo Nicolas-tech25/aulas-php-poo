@@ -1,0 +1,9 @@
+{
+    "name" : "nicolas/aulas-php-poo",
+    "description": "Exemplo de projeto PHP com Orientação a objetos e com classes gerenciadas pelo composer.",
+    "autoload": {
+        "psr-4": {
+            "Tabajara\\" : "src/"
+        }
+    }
+}
