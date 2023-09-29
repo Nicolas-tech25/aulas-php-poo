@@ -19,14 +19,14 @@
     </ul>
 
     <hr>
-    
+
     <?php
         require_once "vendor/autoload.php";
 
-        use Fornecedor\Pagamento;
+         use Fornecedor\Pagamento;
         use Prestador\Pagamento as PrestadorPagamento;
-        $pagamentoFornecedor = new Pagamento;
-        $pagamentoPrestador = new PrestadorPagamento;
+         $pagamentoFornecedor = new Pagamento;
+         $pagamentoPrestador = new PrestadorPagamento;
 
         // Pessoa Fisica
         $ClientePf = new  Tabajara\PessoaFisica;
@@ -38,10 +38,10 @@
 
         // Mei
         $ClienteMei = new  Tabajara\Mei;
-        $ClienteMei->setAreaDeAtuacao("Motoca");
+        $ClienteMei->setAreaDeAtuacao("Motoca nas ruas de Sp 🏍🏍");
     ?> 
-    <pre><?=var_dump($pagamentoFornecedor)?></pre>
-    <pre><?=var_dump($pagamentoPrestador)?></pre>
+  <pre><?=var_dump($pagamentoFornecedor)?></pre>
+    <pre><?=var_dump($pagamentoPrestador)?></pre> 
 
     <p>Nome: <?=$ClientePf->getNome()?></p>
     <p>Nome Fantasia: <?=$ClientePj->getNomeFantasia()?></p>
