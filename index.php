@@ -56,21 +56,22 @@
         require_once "src/pessoaJuridica.php";
         require_once "src/MEI.php";
 
-        // Pessoa fisica
-        $ClientePf = new PessoaFisica;
+        // Pessoa Fisica
+        $ClientePf = new  Tabajara\PessoaFisica;
         $ClientePf->setNome("Cleber");
-        $ClientePf->setIdade(75);
 
-        // Pessoa juridica
-        $ClientePj = new PessoaJuridica;
-        $ClientePf->setAno(2023);
-        $ClientePf->setCnpj("4552-654-951-85");
+        // Pessoa Juridica
+        $ClientePj = new  Tabajara\pessoaJuridica;
+        $ClientePj->setNomeFantasia("Cleber do grau");
 
-        // mei
-        $ClienteMei = new MEI;
-        $ClientePf->setAreaDeAtuacao("Jogador");
-
-        
+        // Mei
+        $ClienteMei = new  Tabajara\Mei;
+        $ClienteMei->setAreaDeAtuacao("Motoca");
     ?> 
+
+    <p>Nome: <?=$ClientePf->getNome()?></p>
+    <p>Nome Fantasia: <?=$ClientePj->getNomeFantasia()?></p>
+    <p>Área de atuação: <?=$ClienteMei->getAreaDeAtuacao()?></p>
+
 </body>
 </html>
