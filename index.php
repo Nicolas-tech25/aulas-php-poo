@@ -19,12 +19,14 @@
     </ul>
 
     <hr>
-
-    <!-- Exercicios: -->
+    
     <?php
-        require_once "src/pessoaFisica.php";
-        require_once "src/pessoaJuridica.php";
-        require_once "src/MEI.php";
+        require_once "vendor/autoload.php";
+
+        use Fornecedor\Pagamento;
+        use Prestador\Pagamento as PrestadorPagamento;
+        $pagamentoFornecedor = new Pagamento;
+        $pagamentoPrestador = new PrestadorPagamento;
 
         // Pessoa Fisica
         $ClientePf = new  Tabajara\PessoaFisica;
@@ -38,6 +40,8 @@
         $ClienteMei = new  Tabajara\Mei;
         $ClienteMei->setAreaDeAtuacao("Motoca");
     ?> 
+    <pre><?=var_dump($pagamentoFornecedor)?></pre>
+    <pre><?=var_dump($pagamentoPrestador)?></pre>
 
     <p>Nome: <?=$ClientePf->getNome()?></p>
     <p>Nome Fantasia: <?=$ClientePj->getNomeFantasia()?></p>

@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "Tabajara\\" : "src/",
-            "Fornecedor\\": "scr/fornecedores"
+            "Fornecedor\\": "src/fornecedores/",
+            "Prestador\\": "src/prestadores/"
         }
     }
 }
