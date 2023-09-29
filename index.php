@@ -25,12 +25,20 @@
         require_once "src/fornecedores/Pagamento.php";
         require_once "src/prestadores/Pagamento.php";
 
-        // Forma 1 de usar namespaces
-        $pagamentoFornecedor = new Fornecedor\Pagamento;
-        $pagamentoPagamento = new Prestador\Pagamento;
+        // Forma 01 de usar classes com namespaces
+        // $pagamentoFornecedor = new Fornecedor\Pagamento;
+        // $pagamentoPrestador = new Prestador\Pagamento;
+
+
+        // Forma 02 de usar classes com namespaces
+        use Fornecedor\Pagamento;
+        use Prestador\Pagamento as PrestadorPagamento;
+
+        $pagamentoFornecedor = new Pagamento;
+        $pagamentoPrestador = new PrestadorPagamento;
     ?>
 
     <pre><?=var_dump($pagamentoFornecedor)?></pre>
-    <pre><?=var_dump($pagamentoPagamento)?></pre>
+    <pre><?=var_dump($pagamentoPrestador)?></pre>
 </body>
 </html>
